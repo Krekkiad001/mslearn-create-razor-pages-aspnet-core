@@ -4,6 +4,7 @@ using ContosoPizza.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<PizzaService>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
